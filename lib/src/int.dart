@@ -17,7 +17,7 @@ class NumberInt implements Number {
 
   @override
   NumberInt operator -() {
-    return NumberInt(-(val));
+    return NumberInt(-val);
   }
 
   @override
@@ -52,22 +52,22 @@ class NumberInt implements Number {
 
   @override
   bool operator <(Number value) {
-    return (intValue < value.intValue);
+    return intValue < value.intValue;
   }
 
   @override
   bool operator <=(Number value) {
-    return (intValue <= value.intValue);
+    return intValue <= value.intValue;
   }
 
   @override
   bool operator >(Number value) {
-    return (intValue > value.intValue);
+    return intValue > value.intValue;
   }
 
   @override
   bool operator >=(Number value) {
-    return (intValue >= value.intValue);
+    return intValue >= value.intValue;
   }
 
   @override

@@ -2,7 +2,7 @@ import 'package:adaptive_number/src/stub.dart'
 // ignore: uri_does_not_exist
     if (dart.library.io) 'package:adaptive_number/src/int.dart'
 // ignore: uri_does_not_exist
-    if (dart.library.html) 'package:adaptive_number/src/int64.dart';
+    if (dart.library.js_interop) 'package:adaptive_number/src/int64.dart';
 
 abstract class Number {
   static Number zero = Number(0);
@@ -18,6 +18,9 @@ abstract class Number {
 
   @override
   int get hashCode;
+
+  @override
+  bool operator ==(Object other);
 
   /// Addition operator.
   Number operator +(Number value);

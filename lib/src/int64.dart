@@ -18,7 +18,7 @@ class NumberInt64 implements Number {
 
   @override
   NumberInt64 operator -() {
-    return NumberInt64(-(val));
+    return NumberInt64(-val);
   }
 
   @override
@@ -53,22 +53,22 @@ class NumberInt64 implements Number {
 
   @override
   bool operator <(Number value) {
-    return (intValue < value.intValue);
+    return intValue < value.intValue;
   }
 
   @override
   bool operator <=(Number value) {
-    return (intValue <= value.intValue);
+    return intValue <= value.intValue;
   }
 
   @override
   bool operator >(Number value) {
-    return (intValue > value.intValue);
+    return intValue > value.intValue;
   }
 
   @override
   bool operator >=(Number value) {
-    return (intValue >= value.intValue);
+    return intValue >= value.intValue;
   }
 
   @override
