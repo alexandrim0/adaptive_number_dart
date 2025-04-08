@@ -1,5 +1,5 @@
 name: adaptive_number
-version: 1.0.1
+version: 1.0.2
 
 description: >-
   Library providing an adaptive number implementation. On JS runtimes, a 64-bit signed fixed-width integer will be used and
@@ -7,10 +7,10 @@ description: >-
 homepage: https://github.com/lemoony/adaptive_number_dart
 
 environment:
-  sdk: '>=2.12.0 <4.0.0'
+  sdk: '>=3.1.0 <4.0.0'
 
 dependencies:
-  fixnum: ^1.0.0
+  fixnum: ^1.1.1
 
 dev_dependencies:
   lint: ^2.3.0
